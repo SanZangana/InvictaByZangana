@@ -208,3 +208,15 @@ body{
   video {
     margin-top: 40px;
   }
+  .left-right-sec:nth-child(even) .text{
+    margin-right: -65px;
+    text-align: right;
+  }
+  .left-right-sec:nth-child(even) .text-inner{
+    margin: 55px 190px 0 0;
+  }
+  .left-right-sec:nth-child(even) .text-inner:before{
+    left: inherit;
+    right: -30px;
+  }
+  

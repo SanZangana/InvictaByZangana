@@ -205,3 +205,6 @@ body{
     height: 100%;
     background: linear-gradient(to top, transparent, #000000);
   }
+  video {
+    margin-top: 40px;
+  }

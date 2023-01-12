@@ -91,12 +91,27 @@
                                 </p>
                                 <a href="#" class="btn">Learn More</a>
                             </div>
-                        <div class="video"><video width="500" height="500" src="videos/san-progress.mp4" type="video/mp4" autoplay muted loop>
+                        <div class="video"><video width="500" height="500" src="assets/videos/san-progress.mp4" type="video/mp4" autoplay muted loop>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <script src="https://unpkg.com/rolly.js@0.2.1/dist/rolly.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        const r = rolly({
+            view: document.querySelector('.app'),
+            native: true,
+            // other options
+        });
+        r.init();
+
+        
+        AOS.init({
+            duration: 1500
+        });
+    </script>
 </body>
 </html>

@@ -169,3 +169,39 @@ body{
     height: 1px;
     background: linear-gradient(to left, transparent, #000000, transparent);
   }
+  .sec2 {
+    padding: 100px 0 0;
+  }
+  .sec2 h2 {
+    text-transform: uppercase;
+  }
+  .sec2 p{
+    line-height: 30px;
+  }
+  .sec2-inner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: left;
+  }
+  .sec2-inner .img {
+    width: auto;
+  }
+  .sec2-inner .text {
+    width: 50px;
+    margin-left: 40px;
+    z-index: 9;
+  }
+  .sec2 .text-inner{
+    position: relative;
+    margin: 55px 0 0 190px;
+  }
+  .sec2 .text-inner:before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: -30px;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #000000);
+  }

@@ -116,4 +116,46 @@ body{
     align-items: center;
     margin: 20px;
   }
-  
+  .sec1 {
+    position: relative;
+    padding: 80px 0;
+  }
+  .sec1 h3{
+    text-transform: uppercase;
+    line-height: 40px;
+  }
+  .sec1 p {
+    line-height: 32px;
+  }
+  .sec1-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .sec1 .text{
+    width: 47%;
+  }
+  .sec1 .text-left{
+    text-align: right;
+  }
+  .sec1 .text-right{
+    text-align: left;
+  }
+  .sec1:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, transparent, #000000, transparent);
+  }
+  .sec1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, transparent, #000000, transparent);
+  }

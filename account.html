@@ -10,6 +10,8 @@
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
+<body>
+    
 
   <header>
     <div class="left-menu">
@@ -27,18 +29,36 @@
             <li><a href="membership.html">Membership</a></li>
         </ul>
     </div>
-
-    <video class="bg-video" src="videos/bg-vid.mp4" autoplay loop muted></video>
-      <header>Day one or One day?</header>
-      <p>
-        It brings me immense joy that you have chosen to improve your life.
-        The website is not 100% finished but 
-      </p>
-      <div class="form-container">
-        <p>Join now to get the latest updates!</p>
-        <div class="input-form">
-          <label>Full Name</label>
-          <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
-          <span id="name-error"></span>
+    <section id="container-si">
+        <video class="bg-video" src="videos/bg-vid.mp4" autoplay loop muted></video>
+        <header>Day one or One day?</header>
+            <p>
+             It brings me immense joy that you have chosen to improve your life.
+             The website is not 100% finished but 
+            </p>
+        <div class="form-container">
+            <p>Join now to get the latest updates!</p>
+            <div class="input-form">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+            <span id="name-error"></span>
+            </div>
+            <div class="input-form">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email" id="contact-email" onkeyup="validateEmail()">
+                <span id="email-error"></span>
+            </div>
+    
+            <div class="input-form">
+                <label>Have any specific questions?</label>
+                <textarea rows="5" placeholder="Enter your message" id="contact-me" onkeyup="validateMessage()"></textarea>>
+                <span id="message-error"></span>
+            </div>
+    
+            <button class="submit-btn" onclick="return validateForm()">Submit</button>
+            <span id="submit-error"></span>
+            
         </div>
+    </section>
 </header>
+</body>

@@ -257,3 +257,74 @@ body{
     text-align: center;
   }
   
+  /* style rules for form */
+.form-container{
+  width: 90%;
+  max-width: 500px;
+  padding: 50px 30px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+
+.input-form{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  position: relative;
+}
+.input-form label{
+  flex-basis: 28%;
+  color: #fafafa;
+}
+.input-form input, .input-form textarea{
+  flex-basis: 68%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #999;
+  color: #fafafa;
+  font-size: 16px;
+}
+::placeholder{
+  font-size: 14px;
+  color: lavender;
+}
+
+.input-form span {
+  position: absolute;
+  bottom: 12px;
+  right: 17px;
+  font-size: 14px;
+  color: red;
+}
+#submit-error {
+  color: red;
+}
+
+.input-form span i {
+  color: seagreen;
+}
+
+.submit-btn {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #fafafa;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 12px;
+  padding: 12px;
+  width: 100px;
+  cursor: pointer;
+  margin: 5px;
+  transition: 0.5s;
+}
+.submit-btn:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}

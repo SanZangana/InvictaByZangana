@@ -34,4 +34,28 @@ function validateEmail() {
     emailError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
     return true;
   }
+
+//  fucntion for validation for entering a message
+  function validateMessage() {
+    var message = document.getElementById('contact-me').value;
+    var required = 30;
+    var left = required - message.length;
   
+    if(left > 0){
+      messageError.innerHTML = " more characters required";
+      return false;
+    }
+    messageError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+    return true;
+  }
+  
+  // If user does not enter valid info the pop-up 'Please fix error' appears
+  function validateForm() {
+    if(!validateName() || !validateEmail() || !validateMessage()){
+      submitError.style.display = 'block';
+      submitError.innerHTML = 'Please fix error to proceed';
+      setTimeout(function(){submitError.style.display = 'none';}, 3000)
+      return false;
+    }
+  
+  }

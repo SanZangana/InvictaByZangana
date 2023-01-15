@@ -23,7 +23,7 @@ class ReviewDetail(View):
 
         return render(
             request,
-            "review_detail.html",
+            "review_test.html",
             {
                 "review": review,
                 "comments": comments,

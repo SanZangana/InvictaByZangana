@@ -1,0 +1,330 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* General Style rules */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+body{
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+  }
+  h1,h2,h3,h4,h5,h6{
+    font-family: "Poppins", sans-serif;
+  }
+  h1 {
+    font-size: 70px;
+    color: #fafafa;
+  }
+  h2{
+    font-size: 36px;
+  }
+  h3{
+    font-size: 26px;
+  }
+  .img-text{
+    color: #fafafa;
+  }
+  .container-ny{
+    max-width: 1166px;
+    margin: 0 auto;
+  }
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+  }
+  header ul{
+    padding-left: 0;
+  }
+  header ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+  }
+  
+  header ul li a{
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all ease 0.5s;
+  }
+  header ul li a:hover{
+    transition: ease-in-out 0.6s;
+    transform: scale(1.2);
+  }
+  .banner {
+    height: 100vh;
+    background: url(../images/me_photobooth.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .banner .text-ny{
+    text-align: center;
+    padding-bottom: 100px;
+  }
+  .banner h1{
+    line-height: 80px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  .btn {
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    height: 60px;
+    background-color: #fafafa;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    line-height: 60px;
+    z-index: 9;
+    margin-top: 50px;
+    transition: all ease 0.5s;
+  }
+  .btn:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    opacity: 0.9;
+    z-index: -1;
+    transition: all ease 0.5s ;
+  }
+  .btn:hover {
+    color: #fafafa;
+  }
+  .btn:hover:before{
+    top: 0;
+    height: 100%;
+  }
+  .brand-logo{
+    padding: 30px 0;
+  }
+  .brand-logo-inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+  }
+  .sec1 {
+    position: relative;
+    padding: 80px 0;
+  }
+  .sec1 h3{
+    text-transform: uppercase;
+    line-height: 40px;
+  }
+  .sec1 p {
+    line-height: 32px;
+  }
+  .sec1-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .sec1 .text{
+    width: 47%;
+  }
+  .sec1 .text-left{
+    text-align: right;
+  }
+  .sec1 .text-right{
+    text-align: left;
+  }
+  .sec1:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, transparent, #000000, transparent);
+  }
+  .sec1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, transparent, #000000, transparent);
+  }
+  .sec2 {
+    padding: 100px 0 0;
+  }
+  .sec2 h2 {
+    text-transform: uppercase;
+  }
+  .sec2 p{
+    line-height: 30px;
+  }
+  .sec2-inner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: left;
+  }
+  .sec2-inner .img {
+    width: auto;
+  }
+  .sec2-inner .text {
+    width: 50px;
+    margin-left: 40px;
+    z-index: 9;
+  }
+  .sec2 .text-inner{
+    position: relative;
+    margin: 55px 0 0 190px;
+  }
+  .sec2 .text-inner:before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: -30px;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #000000);
+  }
+  video {
+    margin-top: 40px;
+  }
+  .left-right-sec:nth-child(even) .text{
+    margin-right: -65px;
+    text-align: right;
+  }
+  .left-right-sec:nth-child(even) .text-inner{
+    margin: 55px 190px 0 0;
+  }
+  .left-right-sec:nth-child(even) .text-inner:before{
+    left: inherit;
+    right: -30px;
+  }
+  
+  /* account.html styling */
+  #container-si {
+    display: flex;
+    row-gap: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  #container-si .bg-video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.85;
+  }
+  
+  #container-si header {
+    font-size: 60px;
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  #container-si p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    max-width: 550px;
+    text-align: center;
+  }
+  
+  /* style rules for form */
+.form-container{
+  width: 90%;
+  max-width: 500px;
+  padding: 50px 30px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+
+.input-form{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  position: relative;
+}
+.input-form label{
+  flex-basis: 28%;
+  color: #fafafa;
+}
+.input-form input, .input-form textarea{
+  flex-basis: 68%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #999;
+  color: #fafafa;
+  font-size: 16px;
+}
+::placeholder{
+  font-size: 14px;
+  color: lavender;
+}
+
+.input-form span {
+  position: absolute;
+  bottom: 12px;
+  right: 17px;
+  font-size: 14px;
+  color: red;
+}
+#submit-error {
+  color: red;
+}
+
+.input-form span i {
+  color: seagreen;
+}
+
+.submit-btn {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #fafafa;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 12px;
+  padding: 12px;
+  width: 100px;
+  cursor: pointer;
+  margin: 5px;
+  transition: 0.5s;
+}
+.submit-btn:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}

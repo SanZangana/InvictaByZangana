@@ -6,6 +6,7 @@ STATUS = ((0, 'Draft'), (1, 'Published'))
 
 
 class Review(models.Model):
+
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="project_review")
@@ -25,9 +26,10 @@ class Review(models.Model):
 
     def number_of_likes(self):
         return self.likes.count()
-    
 
-class Comments(models.Model):
+
+class Comment(models.Model):
+
     review = models.ForeignKey(Review, on_delete=models.CASCADE, related_name='comments')
     name = models.CharField(max_length=80)
     email = models.EmailField()

@@ -7,7 +7,3 @@ from django_summernote.admin import SummernoteModelAdmin
 class ReviewAdmin(SummernoteModelAdmin):
 
     summernote_fields = ('content')
-
-admin.site.register(Review)
-
-# Register your models here.

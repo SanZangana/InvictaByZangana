@@ -1,125 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invicta</title>
-    <link rel="stylesheet" href="https://unpkg.com/rolly.js@0.2.1/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <main class="app">
-        <header data-aos="fade-up">
-            <div class="left-menu">
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </div>
-            <div class="logo">
-                <img src="" alt="">
-            </div>
-            <div class="right-menu">
-                <ul>
-                    <li><a href="account.html">Account</a></li>
-                    <li><a href="membership.html">Membership</a></li>
-                </ul>
-            </div>
-        </header>
-        <section class="banner" data-scene>
-            <div class="container-ny">
-                <div class="text-ny" data-aos="zoom-out" data-aos-delay="1000">
-                    <h1>What is <strong>Invicta By Zangana?</strong></h1>
-                    <p class="img-text">Read below for the origins behind the movement</p>
-                    <a href="#" class="btn">Get me started!</a>
-                </div>
-            </div>
-        </section>
-        <section class="brand-logo" data-scene>
-            <div class="container-ny">
-                <div class="brand-logo-inner">
-                    <h5>Honor</h5>
-                    <h5>Strength</h5>
-                    <h5>Mastery</h5>
-                    <h5>Courage</h5>
-                    <h5>Loyalty</h5>
-                    <h5>Empty</h5>
-                    <div class="item"><img src=""></div>
-                </div>
-            </div>
-        </section>
-        <!-- First hook (marketing) -->
-        <section class="sec1" data-scene>
-            <div class="container-ny">
-                <div class="sec1-in">
-                    <div class="text text-left">
-                        <h3>Hey man i know who you want to be and i want to be that person too!
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                        </h3>
-                    </div>
-                    <div class="text text-right">
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-                            officia deserunt mollit anim id est laborum."</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Second hook (marketing) -->
-        <section class="sec2 left-right-sec" data-scene>
-            <div class="container-ny">
-                <div class="sec2-inner">
-                    <div class="video">
-                        <div class="text-ny">
-                            <div class="text-inner">
-                                <h2>Transform your body?</h2>
-                                <p>As you can see in this progress video, I have also been <em>overweight.</em>I really struggled with losing weight/fat and <strong>build muscle</strong> at the same time.
-                                But once I applied the knowledge that <strong>YOU</strong> will learn about, everything changed.
-                                Some may call it "strict", however, I would call it the proper human diet. A diet where you feed the body the essential 
-                                nutrients needed to both preserve muscle mass but also <em>build it.</em> 
-                                </p>
-                                <a href="#" class="btn">Learn More</a>
-                            </div>
-                        <div class="video"><video width="500" height="500" src="assets/videos/san-progress.mp4" type="video/mp4" autoplay muted loop>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="sec3" data-scene>
-            <div class="container-ny">
-                <div class="sec3-inner">
-                    <h2>We can only save ourselves</h2>
-                    <div class="sec3-slider">
-                        <div class="item">
-                            <img src="assets/images/me_kurdistan.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <script>
-        const r = rolly({
-            view: document.querySelector('.app'),
-            native: true,
-            // other options
-        });
-        r.init();
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
 
-        
-        AOS.init({
-            duration: 1500
-        });
-    </script>
-</body>
-</html>
+
+<section class="banner" data-scene>
+    <div class="container-ny">
+        <div class="text-ny" data-aos="zoom-out" data-aos-delay="1000">
+            <h1>What is <strong>Invicta By Zangana?</strong></h1>
+            <p class="img-text">Read below for the origins behind the movement</p>
+            <a href="#" class="btn">Get me started!</a>
+        </div>
+    </div>
+</section>
+<section class="brand-logo" data-scene>
+    <div class="container-ny">
+        <div class="brand-logo-inner">
+            <h5>Honor</h5>
+            <h5>Strength</h5>
+            <h5>Mastery</h5>
+            <h5>Courage</h5>
+            <h5>Loyalty</h5>
+            <h5>Empty</h5>
+            <div class="item"><img src=""></div>
+        </div>
+    </div>
+</section>
+<!-- First hook (marketing) -->
+<section class="sec1" data-scene>
+    <div class="container-ny">
+        <div class="sec1-in">
+            <div class="text text-left">
+                <h3>Hey man i know who you want to be and i want to be that person too!
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </h3>
+            </div>
+            <div class="text text-right">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                    officia deserunt mollit anim id est laborum."</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Second hook (marketing) -->
+<section class="sec2 left-right-sec" data-scene>
+    <div class="container-ny">
+        <div class="sec2-inner">
+            <div class="video">
+                <div class="text-ny">
+                    <div class="text-inner">
+                        <h2>Transform your body?</h2>
+                        <p>As you can see in this progress video, I have also been <em>overweight.</em>I really
+                            struggled with losing weight/fat and <strong>build muscle</strong> at the same time.
+                            But once I applied the knowledge that <strong>YOU</strong> will learn about, everything
+                            changed.
+                            Some may call it "strict", however, I would call it the proper human diet. A diet where
+                            you feed the body the essential
+                            nutrients needed to both preserve muscle mass but also <em>build it.</em>
+                        </p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                    <div class="video"><video width="500" height="500" src="{% static 'videos/san-progress.mp4' %}"
+                            type="video/mp4" autoplay muted loop>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<section class="sec3" data-scene>
+    <div class="container-ny">
+        <div class="sec3-inner">
+            <h2>We can only save ourselves</h2>
+            <div class="sec3-slider">
+                <div class="item">
+                    <img src="{% static 'images/me_kurdistan.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock content %}

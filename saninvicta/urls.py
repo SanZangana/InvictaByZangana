@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from todo.views import get_todo_list
+from todo.views import get_todo_list, add_item
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,4 +24,5 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     # Add correct name to 'name', maybe 'Leave a review' or smth
     path('hello/', get_todo_list, name='get_todo_list'), 
+    path('add/', add_item, name='add'), 
 ]

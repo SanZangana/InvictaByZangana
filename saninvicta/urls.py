@@ -15,12 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from todo.views import say_hello
+from todo.views import get_todo_list
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),
     path('', include('project.urls'), name='project_urls'),
     path('accounts/', include('allauth.urls')),
-    path('hello/', say_hello, name='hello'),
+    # Add correct name to 'name', maybe 'Leave a review' or smth
+    path('hello/', get_todo_list, name='get_todo_list'), 
 ]

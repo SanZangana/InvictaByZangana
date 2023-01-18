@@ -1,0 +1,46 @@
+{% extends 'base.html' %} {% block content %}
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add your own HONEST review!</h1>
+    <table>
+        {% for item in items %}
+            <tr>
+            {% if item.done %}
+                <td><strike>{{ item.name }}</strike></td>
+            {% else %}
+                <td>{{ item.name }}</td>
+            {% endif %}
+            <td>
+                <a href="{% url 'toggle' item.id %}">
+                    <button>Toggle</button>
+                </a>
+            </td>
+            <td>
+                <a href="{% url 'edit' item.id %}">
+                    <button>Edit</button>
+                </a>
+            </td>
+            <td>
+                <a href="{% url 'delete' item.id %}">
+                    <button>Delete</button>
+                </a>
+            </td>
+            </tr>
+            {% empty %}
+            <tr><td>You have nothing to do!</td></tr>
+        {% endfor %}
+    </table>
+    <a href="{% url 'add_item' %}">Add a item</a>
+</body>
+</html>
+{% endblock %}

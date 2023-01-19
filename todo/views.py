@@ -36,7 +36,7 @@ def edit_item(request, item_id):
     context = {
         'form': form
     }
-    return render(request, 'todo/edit_item.html')
+    return render(request, 'todo/edit_item.html', context)
 
 
 def toggle_item(request, item_id):

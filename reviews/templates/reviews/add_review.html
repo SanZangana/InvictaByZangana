@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% block content %}
+
+{% load crispy_forms_tags %}
+
+<div class="masthead">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-md-6 masthead-text">
+                <h1 class="post-title">Add review</h1>
+                <form action="{% url 'add_review' %}" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ review_form.as_p }}
+                    <button type="submit">Submit review</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock content %}

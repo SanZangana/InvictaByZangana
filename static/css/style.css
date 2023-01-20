@@ -16,18 +16,20 @@ body{
   h1,h2,h3,h4,h5,h6{
     font-family: "Poppins", sans-serif;
   }
-  h1 {
+  /* h1 {
     font-size: 70px;
-    color: #fafafa;
+    color: #000000;
+  } */
+  .img_header {
+    font-size: 70px;
+    color: black;
+    margin-bottom: 50px;
   }
   h2{
     font-size: 36px;
   }
   h3{
     font-size: 26px;
-  }
-  .img-text{
-    color: #fafafa;
   }
   .container-ny{
     max-width: 1166px;
@@ -65,7 +67,7 @@ body{
   }
   .banner {
     height: 100vh;
-    background: url(../images/me_photobooth.jpg) no-repeat;
+    background: url(../images/berg_img.jpg) no-repeat;
     background-size: cover;
     background-position: top;
     display: flex;
@@ -328,3 +330,5 @@ body{
   transform: scale(1.1);
   transition: 0.3s;
 }
+
+

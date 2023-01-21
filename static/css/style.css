@@ -65,7 +65,7 @@ body{
     transition: ease-in-out 0.6s;
     transform: scale(1.2);
   }
-  .banner {
+  /* .banner {
     height: 100vh;
     background: url(../images/berg_img.jpg) no-repeat;
     background-size: cover;
@@ -74,7 +74,7 @@ body{
     align-items: flex-end;
     margin-left: auto;
     margin-right: auto;
-  }
+  } */
   .banner .text-ny{
     text-align: center;
     padding-bottom: 100px;

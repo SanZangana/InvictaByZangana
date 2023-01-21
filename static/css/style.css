@@ -65,7 +65,7 @@ body{
     transition: ease-in-out 0.6s;
     transform: scale(1.2);
   }
-  .banner {
+  .banner img {
     height: 100vh;
     background-size: cover;
     background-position: top;

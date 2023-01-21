@@ -10,7 +10,7 @@ https://ui.dev/amiresponsive?url=https://saninvicta.herokuapp.com
 
 
 
-![screenshot](documentation/amiresponsive.jpg)
+![](documentation/amiresponsive.png)
 
 ## UX
 

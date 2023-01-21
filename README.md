@@ -56,13 +56,13 @@ In this section, list all of your user stories for the project.
 
     - The home section invites the user to the goal of the site, a brief introduction is then proceeded by some of my own transformations throughout the years. This is mainly so he user can see that I lead by example!
 
-![screenshot](documentation/home_sc.png)
+![](documentation/home_sc.png)
 
 
-![screenshot](documentation/home2_sc.png)
+![](documentation/home2_sc.png)
 
 
-![screenshot](documentation/home3_sc.png)
+![](documentation/home3_sc.png)
 
 - **Feature #2**
 
@@ -70,11 +70,11 @@ In this section, list all of your user stories for the project.
 
     - They also have a chance to both read AND leave their own review/testimonial if they find my tips to be good. This will help both the admin of the site but also the other users to see that the tips are working.
 
-![screenshot](documentation/membership1.png)
+![](documentation/membership1.png)
 
-![screenshot](documentation/membership2.png)
+![](documentation/membership2.png)
 
-![screenshot](documentation/membership3.png)
+![](documentation/membership3.png)
 
 - **Feature #3**
 
@@ -83,11 +83,11 @@ In this section, list all of your user stories for the project.
 
     - The sign in feature comes with a 'sign out' option as well, of course.
 
-![screenshot](documentation/signup_sc.png)
+![](documentation/signup_sc.png)
 
-![screenshot](documentation/signout_sc.png)
+![](documentation/signout_sc.png)
 
-![screenshot](documentation/signin_sc.png)
+![](documentation/signin_sc.png)
 
 ### Future Features
 

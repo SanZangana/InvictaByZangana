@@ -67,7 +67,7 @@ body{
   }
   .banner {
     height: 100vh;
-    background: url(../images/berg_img.jpg) no-repeat;
+    background: url(../images/me_photobooth.jpg) no-repeat;
     background-size: cover;
     background-position: top;
     display: flex;

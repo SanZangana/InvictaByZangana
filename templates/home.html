@@ -3,52 +3,49 @@
 {% block content %}
 
 
-<section class="banner" data-scene>
+<section class="banner">
     <div class="container-ny">
-        <div class="text-ny">
-            <h1 class="img_header">What is <strong>Invicta By Zangana?</strong></h1>
-            <a href="#" class="btn">Get me started!</a>
+            <div class="img-text">
+                <img src="{% static 'images/berg_img.jpg' %}" alt="picture of me standing in my city" class="bg-img">
+                <h1 class="img-header"><strong>Welcome!</strong></h1>
+            </div>
+            <h2 class="img-h2">Your guide to Self-improvement</h2>
         </div>
     </div>
 </section>
 <section class="brand-logo">
     <div class="container-ny">
         <div class="brand-logo-inner">
-            <h5>Honor</h5>
-            <h5>Strength</h5>
-            <h5>Mastery</h5>
-            <h5>Courage</h5>
-            <h5>Loyalty</h5>
-            <h5>Empty</h5>
-            <div class="item"><img src=""></div>
+            <h5>Finance</h5>
+            <h5>Health</h5>
+            <h5>Fitness</h5>
+            <h5>Fashion</h5>
         </div>
     </div>
 </section>
 <!-- First hook (marketing) -->
-<section class="sec1" data-scene>
+<section class="sec1">
     <div class="container-ny">
         <div class="sec1-in">
             <div class="text text-left">
-                <h3>Hey man i know who you want to be and i want to be that person too!
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                </h3>
+                <h2><strong>ACNE TREATMENT</strong>
+                </h2>
             </div>
             <div class="text text-right">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id est laborum."</p>
+                <p>If you struggle with acne and have no other solutions left than to take medications... I GOt THE SOLUTION!
+                    Below here you can see my own issues with acne, this strategy is 100% guaranteed to work.
+                    No magic tricks, no extra money, all it takes is a simple way to figure out which foods your body reacts to.
+                    If you buy the <a href="{% url 'membership' %}">MEMBERSHIP</a> here and book a FREE call with me, 
+                    you will see results within weeks AND feel amazing!</p>
             </div>
+        </div>
+        <div>
+            <img class="sec1-img" src="{% static 'images/acne_noacne.jpg' %}" alt="">
         </div>
     </div>
 </section>
 <!-- Second hook (marketing) -->
-<section class="sec2 left-right-sec">
+<section class="sec2">
     <div class="container-ny">
         <div class="sec2-in">
             <div class="text text-left">
@@ -61,22 +58,12 @@
                         you feed the body the essential
                         nutrients needed to both preserve muscle mass but also <em>build it.</em>
                     </p>
-                    </div>
-                    <div class="video"><video width="500" height="500" src="{% static 'videos/san-progress.mp4' %}"
-                            type="video/mp4" autoplay muted loop>
-                    </div>
-                </div>
             </div>
-        </div>
-</section>
-<section class="sec3">
-    <div class="container-ny">
-        <div class="sec3-inner">
-            <h2>We can only save ourselves</h2>
-            <div class="sec3-slider">
-                <div class="item">
-                    <img src="{% static 'images/me_kurdistan.png' %}" alt="">
-                </div>
+            <div>
+                <video width="320" height="240" controls>
+                    <source src="{% static 'videos/progress-vid.mp4' %}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
     </div>

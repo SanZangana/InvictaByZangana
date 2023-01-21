@@ -65,8 +65,9 @@ body{
     transition: ease-in-out 0.6s;
     transform: scale(1.2);
   }
-  .banner img {
+  .banner {
     height: 100vh;
+    background: url(../images/berg_img.jpg) no-repeat;
     background-size: cover;
     background-position: top;
     display: flex;
